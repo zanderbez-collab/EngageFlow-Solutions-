@@ -32,3 +32,7 @@ h1,h2,h3,.sec__h{font-family:Poppins,system-ui,sans-serif;font-weight:600;letter
 @media(max-width:700px){.sec{padding:56px 0}.st,.cl{padding:64px 0}.sec__h{margin-bottom:28px}}
 /* iPhones zoom the page in when you tap a form field with text smaller than 16px, and do not zoom back out. Keep every field at 16px on touch screens. */
 @media(pointer:coarse){input:not([type=checkbox]):not([type=radio]),select,textarea{font-size:16px!important}}
+/* Phone header: let the logo shrink so the logo and icons always fit. Before the script font loads, the fallback font made the header ~65px too wide, and iPhones then widened the whole page, cutting off the right edge. */
+@media(max-width:900px){.gh .wrap .gh__logo{flex:0 1 auto;min-width:0;font-size:clamp(28px,9vw,38px)}.gh .wrap .gh__n{white-space:nowrap;overflow-x:clip}}
+@media(max-width:420px){.gh .wrap{gap:10px;padding:0 14px}.gh .wrap .gh__ic{gap:12px}}
+.gh{overflow-x:clip}
