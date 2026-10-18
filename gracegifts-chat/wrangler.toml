@@ -1,0 +1,11 @@
+name = "gracegifts-chat"
+main = "src/worker.js"
+compatibility_date = "2026-10-01"
+compatibility_flags = ["nodejs_compat"]
+
+[vars]
+STORE_URL = "https://gracegifts.co.za"
+ALLOWED_ORIGINS = "https://gracegifts.co.za,https://www.gracegifts.co.za"
+
+# The Claude API key is a secret, never put it in this file:
+#   npx wrangler secret put ANTHROPIC_API_KEY

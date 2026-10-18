@@ -1,0 +1,22 @@
+{
+  "name": "gracegifts-chat",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test test/*.test.js",
+    "build": "esbuild src/worker.js --bundle --format=esm --platform=browser --target=es2022 --minify --outfile=dist/worker.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.135.0"
+  },
+  "devDependencies": {
+    "esbuild": "^0.28.2",
+    "playwright": "^1.56.1",
+    "wrangler": "^4.151.1"
+  },
+  "type": "module"
+}
