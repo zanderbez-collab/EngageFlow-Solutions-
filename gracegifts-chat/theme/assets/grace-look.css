@@ -1,0 +1,34 @@
+:root{--soft:#6B625C;--ink:#2B2623;--rose:#A34B62;--rose-d:#823A4E;--gold:#B8935A;--hf:Poppins,system-ui,sans-serif;--hw:600}
+[data-mood=baby]{--soft:#4A6173}[data-mood=kitchen]{--soft:#525F45}[data-mood=bridal]{--soft:#774F52}[data-mood=house]{--soft:#76533F}[data-mood=birthday]{--soft:#6A5D2E}
+body{color:#2B2623;background:#FBF8F4}
+h1,h2,h3,.sec__h{font-family:Poppins,system-ui,sans-serif;font-weight:600;letter-spacing:-.01em;text-transform:none}
+.ot__c h3,.cs h3,.qc h3,.st h2,.cl h2{font-family:Poppins,system-ui,sans-serif;font-weight:600}
+.pr b{font-family:Poppins,system-ui,sans-serif;font-weight:600}
+.sec__h{font-size:clamp(28px,3.6vw,42px);margin-bottom:40px}
+.sec{padding:88px 0}.st{padding:96px 0}.cl{padding:88px 0}
+.eb{color:var(--rose);font-weight:600}
+.btn{background:var(--rose);border-color:var(--rose);color:#fff;font-weight:600;box-shadow:0 4px 14px rgba(163,75,98,.28)}
+.btn:hover{background:var(--rose-d);border-color:var(--rose-d)}
+.cl .btn{background:#E8B4B8;border-color:#E8B4B8;color:#3A1F28;box-shadow:none}
+.cl .btn:hover{background:#F3C9CE;border-color:#F3C9CE}
+.pc{border:1px solid #E3DAD0;box-shadow:0 2px 12px rgba(43,38,35,.07)}
+.pc:hover{box-shadow:0 12px 30px rgba(43,38,35,.16)}
+.pc__t{font-weight:600}.pc__p{color:#6B625C;font-weight:500}
+.ot__c{box-shadow:0 2px 12px rgba(43,38,35,.07)}
+.rvw figure,.pr div{box-shadow:0 2px 12px rgba(43,38,35,.07)}
+.rvw figcaption{color:#6B625C}
+.bd--so{background:#6B625C}
+.st{background:#F1E6DA}.st p{color:#5A5049}
+[id$='__reviews'] .sec{background:#fff}
+[id$='__steps'] .sec{background:#2B2623;color:#F5EFE8}
+[id$='__steps'] .eb{color:#E8B4B8}
+[id$='__steps'] h2,[id$='__steps'] h3{color:#fff}
+[id$='__steps'] .stp b{color:#D9B98F}
+[id$='__steps'] .stp p{color:#D9D0C6}
+.gh{background:#fff}
+.cs__b{display:inline-block;background:#2B2623;color:#fff;font-size:12px;letter-spacing:.14em;text-transform:uppercase;font-weight:600;padding:5px 14px;border-radius:20px;margin-bottom:14px}
+.cs{border-color:#C9A27A;background:#FFFDF9;padding:44px 24px}
+.cs p{color:#5A5049}
+@media(max-width:700px){.sec{padding:56px 0}.st,.cl{padding:64px 0}.sec__h{margin-bottom:28px}}
+/* iPhones zoom the page in when you tap a form field with text smaller than 16px, and do not zoom back out. Keep every field at 16px on touch screens. */
+@media(pointer:coarse){input:not([type=checkbox]):not([type=radio]),select,textarea{font-size:16px!important}}

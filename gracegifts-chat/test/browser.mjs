@@ -143,7 +143,7 @@ const expect = {
   const { ctx, p } = await open('/', { width: 375, height: 667 });
   const box = await p.locator('#gc').boundingBox();
   check('mobile panel fits screen', box.x >= 0 && box.x + box.width <= 375 && box.y >= 0, JSON.stringify(box));
-  await p.screenshot({ path: process.env.SHOT || '/dev/null' });
+  if (process.env.SHOT) await p.screenshot({ path: process.env.SHOT });
   await ctx.close();
 }
 
